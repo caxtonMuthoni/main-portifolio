@@ -6,16 +6,16 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5% !important; }
   @media only screen and (max-width: 1200px) {
     html {
-      font-size: 50%; } }
+      font-size: 50% !important; } }
   @media only screen and (max-width: 600px) {
     html {
-      font-size: 43.75%; } }
+      font-size: 43.75% !important; } }
   @media only screen and (max-width: 400px) {
     html {
-      font-size: 38.75%; } }
+      font-size: 38.75% !important; } }
 
 body {
   font-family: "Nunito", sans-serif;
@@ -477,7 +477,7 @@ header:focus {
   padding: 15rem 5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5rem; }
+  grid-gap: 4rem; }
   @media only screen and (max-width: 1200px) {
     .projects {
       grid-template-columns: repeat(3, 1fr); } }
@@ -505,6 +505,7 @@ header:focus {
       height: 45rem; } }
   .project__cta, .project__picture {
     display: block;
+    width: 100%;
     height: 100%;
     border-radius: 0.5rem;
     transition: all 1s;
@@ -528,7 +529,7 @@ header:focus {
     .project__cta-paragraph {
       color: #f9f7f6;
       padding: 1.3rem;
-      font-size: 1.8rem; }
+      font-size: 1.6rem; }
     .project__cta-btn {
       width: 60%;
       align-self: center;
