@@ -17,12 +17,21 @@ $(document).ready(function () {
         offset: '60px'
     })
 
-        //    Side menu 
+    //    Side menu 
 
-        $('.js--toggle-menu').click(function () {
-            console.log("clicked")
-            $('.side-nav').toggleClass('side-nav__active')
-        })
+    $('.js--toggle-menu').click(function () {
+        console.log("clicked")
+        $('.side-nav').toggleClass('side-nav__active')
+    })
+
+    // Close side menu
+
+    $('#menucontainer').click(function (event) {
+        event.stopPropagation();
+        $('.side-nav').removeClass('side-nav__active')
+    });
+
+
 
     // Smooth scroll
     // Select all links with hashes

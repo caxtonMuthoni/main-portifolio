@@ -237,7 +237,8 @@ header:focus {
     visibility: hidden;
     opacity: 0; }
   .side-nav .navbar__icon--close {
-    display: none; }
+    display: none;
+    margin: 1rem; }
   .side-nav .navbar__icon--open {
     display: block; }
   .side-nav__active {
