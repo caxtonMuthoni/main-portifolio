@@ -405,7 +405,7 @@
                     class="contact_us-form">
                     <h3 class="heading-3 mb-sm">Get in touch with Caxton</h3>
                     <div class="contact_us-form-input-group">
-                        <input type="text" autocomplete="off" required
+                        <input minlength="5" maxlength="50" type="text" autocomplete="off" required
                             class="contact_us-form-input contact_us-form-input--1" name="name" id="name"
                             placeholder="Fullname">
                         <label class="contact_us-form-label" for="name">Fullname</label>
@@ -419,7 +419,7 @@
                     </div>
 
                     <div class="contact_us-form-input-group">
-                        <textarea class="contact_us-form-input" required name="message" id="message"
+                        <textarea minlength="26" maxlength="700" class="contact_us-form-input" required name="message" id="message"
                             placeholder="Your Message" cols="30" rows="5" class="contact_us-form-message"></textarea>
                         <label class="contact_us-form-label" for="message">Your Message</label>
                     </div>
