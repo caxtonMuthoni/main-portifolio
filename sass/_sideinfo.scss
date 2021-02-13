@@ -1,0 +1,103 @@
+.side-info--1 {
+    grid-column: col-start 7 / full-end;
+    grid-row: 1 / span 2;
+
+    @media only screen and (max-width: 900px){
+        grid-column: 1 /-1;
+        grid-row: 3 / span 1;
+    }
+}
+
+.side-info--2 {
+
+    @media only screen and (max-width: 900px){
+       display: none !important;
+    }
+    
+}
+
+.side-info {
+    background-color: $color-secondary;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+    @media only screen and (max-width: 900px){
+        &__icons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 2rem;
+            padding: 0 4rem;
+        }
+
+        &__social {
+             margin-top: 0;
+            &--1 {
+                margin-top: 0 !important;
+            }
+        }
+     }
+
+    &__image {
+        width: 10rem;
+        height: 10rem;
+        border-radius: 50%;
+        background-color: $color-grey-light-1;
+        display: block;
+        margin: 2rem auto;
+    }
+
+    &__name {
+        color: $color-grey-light-1;
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-family: $heading-font-family;
+        position: relative;
+        
+
+        &::after {
+            content: "";
+            height: 1px;
+            background-color: $color-grey-light-1;
+            width: 70%;
+            position: absolute;
+            bottom: -1rem;
+            left: 0;
+            display: inline-block;
+            margin-left: 15%;
+        }
+    }
+
+
+    &__social {
+
+        color: $color-grey-light-1;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $heading-font-family;
+        font-size: 1.5rem;
+        font-weight: 400;
+        transition: all .5s;
+
+        &--1 {
+            margin-top: 5rem;
+        }
+
+        &--icon {
+            font-size: 2.5rem !important;
+            margin-right: 1rem;
+        }
+
+        &:hover,
+        &:active {
+            color: $color-primary;
+        }
+    }
+}

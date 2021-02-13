@@ -1,0 +1,80 @@
+.footer {
+    background-color: $color-secondary;
+    grid-column: full-start / full-end;
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__logo {
+        width: 16rem;
+        height: 8rem;
+        margin-bottom: 2rem;
+        fill: $color-grey-light-1;
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 1.9rem;
+        color: $color-grey-light-1;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        width: 50%;
+        
+        @media only screen and (max-width: 900px){
+            width: 95%;
+        }
+    }
+}
+
+.nav {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    grid-gap: 1.5rem;
+    &__item {
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: $color-grey-light-1;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.5s;
+            display: block;
+        }
+
+        &:active,
+        &:hover {
+            transform: scale(1.1);
+            color: $color-primary;
+        }
+    }
+}
+
+.footer__legal {
+    text-align: center;
+    color: $color-grey-light-1;
+
+    &-link {
+        &:link,
+        &:visited {
+            color: $color-primary;
+            font-weight: 400;
+            text-decoration: none;
+            text-transform: capitalize;
+            display: inline-block;
+            transition: all .8s;
+        }
+    
+        &:hover,
+        &:visited {
+            color: aqua;
+            transform: scale(1.1);
+        }
+    }
+}
+

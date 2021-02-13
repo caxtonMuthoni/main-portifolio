@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,400&family=Nunito:ital,wght@0,300;0,400;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/imgs/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/imgs/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/imgs/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/imgs/favicons/safari-pinned-tab.svg" color="#f6e50f">
+    <link rel="shortcut icon" href="/imgs/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/imgs/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>Muthoni G Caxton</title>
+</head>
+
+<body class="container">
+
+    <!-- Full Scrre Nav -->
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <svg class="logo--img">
+                <use xlink:href="/imgs/logo/sprite.svg#logo"></use>
+            </svg>
+        </div>
+        <ul class="navbar__nav">
+            <li class="navbar__item"><a href="#home" class="navbar__link--active navbar__link js__nav-link">Home</a>
+            </li>
+            <li class="navbar__item"><a href="#about" class="navbar__link js__nav-link">About</a></li>
+            <li class="navbar__item"><a href="#skills" class="navbar__link js__nav-link">Skills</a></li>
+            <li class="navbar__item"><a href="#projects" class="navbar__link js__nav-link">Projects</a></li>
+            <li class="navbar__item"><a href="#testmonials" class="navbar__link js__nav-link">Testmonials</a></li>
+            <li class="navbar__item"><a href="#contact" class="navbar__link js__nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Side nav -->
+    <nav class="navbar side-nav side-nav__active">
+        <div class="navbar__logo">
+            <svg class="logo--img">
+                <use xlink:href="/imgs/logo/sprite.svg#logo"></use>
+            </svg>
+        </div>
+        <ul class="navbar__nav">
+            <li class="navbar__item"><a href="#home" class="navbar__link--active navbar__link js__nav-link">Home</a>
+            </li>
+            <li class="navbar__item"><a href="#about" class="navbar__link js__nav-link">About</a></li>
+            <li class="navbar__item"><a href="#skills" class="navbar__link js__nav-link">Skills</a></li>
+            <li class="navbar__item"><a href="#projects" class="navbar__link js__nav-link">Projects</a></li>
+            <li class="navbar__item"><a href="#testmonials" class="navbar__link js__nav-link">Testmonials</a></li>
+            <li class="navbar__item"><a href="#contact" class="navbar__link js__nav-link">Contact</a></li>
+        </ul>
+        <div class="navbar__icon">
+            <i class="fa fa-bars js--toggle-menu navbar__icon--open" aria-hidden="true"></i>
+            <i class="fa fa-window-close js--toggle-menu sidebar-menu__nav-icon navbar__icon--close" aria-hidden="true"></i>
+        </div>
+    </nav>
+    
+    <header class="header" id="home">
+        <h3 class="heading-3 header__heading--3">Muthoni G Caxton</h3>
+        <h1 class="heading-1 heading-1--light header__heading--1">
+            I'm a Fullstack Software Engineer <br> with 4+ years of experience.
+        </h1>
+        <div class="header__btns">
+            <a href="#about" class="btn-outline">Learn about me</a>
+            <a href="#projects" class="btn header__btn">View My projects</a>
+        </div>
+    </header>
+    <div class="side-info side-info--1">
+        <h3 class="heading-3">Find me on social media</h3>
+        <img class="side-info__image" src="/imgs/caxton.png" alt="Caxton">
+        <p class="side-info__name">Muthoni G. Caxton</p>
+        <div class="side-info__icons">
+            <a href="https://www.facebook.com/caxton.mathitu/" target="_blank"
+                class="side-info__social side-info__social--1">
+                <i class="fa fa-facebook side-info__social--icon" aria-hidden="true"></i>
+                <span class="side-info__social--name">Facebook</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/caxton-muthoni-7b2444175/" target="_blank" class="side-info__social">
+                <i class="fa fa-linkedin side-info__social--icon" aria-hidden="true"></i>
+                <span class="side-info__social--name">LinkedIn</span>
+            </a>
+
+            <a href="https://api.whatsapp.com/send?phone=+254743751575" target="_blank" class="side-info__social">
+                <i class="fa fa-whatsapp side-info__social--icon" aria-hidden="true"></i>
+                <span class="side-info__social--name">Whatsapp</span>
+            </a>
+        </div>
+
+    </div>
+
+    <section class="about js--section-about" id="about">
+        <div class="about__pictures">
+            <img src="/imgs/hotelia.png" alt="Image 1" class="about__pictures--1">
+            <img src="/imgs/omnifood.png" alt="Image 1" class="about__pictures--2">
+            <img src="/imgs/pizza.png" alt="Image 1" class="about__pictures--3">
+        </div>
+        <div class="about__text">
+            <h2 class="heading-2 heading-2--dark mb-md about__heading">Who is Caxton G ?</h2>
+            <p class="about__text-p about__text-p--1">
+                I’m an innovative software engineer with 7+ years of experience managing all aspects of the development
+                process for small to medium-sized companies
+            </p>
+
+            <p class="about__text-p about__text-p--2">
+                I am a geek. I love computers. I love everything about them. I spend eight to ten hours a day in front
+                of a computer screen as I am coding, debugging, or discussing coding practices and methods with other
+                programmers.
+            </p>
+            <a href="/imgs/cv/caxton_muthoni_cv.pdf" class="btn about__btn">Download my resume</a>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="skill">
+            <svg class="skill__icon">
+                <use xlink:href="/imgs/iconmoon/symbol-defs.svg#icon-brush"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--dark">UI / UX Designer</h4>
+            <p class="skill__paragraph">
+                I am an experienced web designer with 2+ years of experience using the
+                following tools:
+            </p>
+            <div class="skill__chips">
+                <span class="skill__chip">Figma</span>
+                <span class="skill__chip">Adobe Photoshop</span>
+                <span class="skill__chip">Sketch</span>
+                <span class="skill__chip">Adobe XD</span>
+
+            </div>
+        </div>
+
+        <div class="skill">
+            <svg class="skill__icon">
+                <use xlink:href="/imgs/iconmoon/symbol-defs.svg#icon-blackboard"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--dark">Frontend Development</h4>
+            <p class="skill__paragraph">
+                I am an experienced web Designer with the following technologies
+            </p>
+            <div class="skill__chips">
+                <span class="skill__chip">Javascript</span>
+                <span class="skill__chip">Vue/ vuex</span>
+                <span class="skill__chip">Html/Css</span>
+                <span class="skill__chip">React(learning)</span>
+            </div>
+        </div>
+
+        <div class="skill">
+            <svg class="skill__icon">
+                <use xlink:href="/imgs/iconmoon/symbol-defs.svg#icon-sports-club"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--dark">Backend develoment</h4>
+            <p class="skill__paragraph">
+                I am an experienced backend engineer using the following technologies
+            </p>
+            <div class="skill__chips">
+                <span class="skill__chip">PHP/Laravel</span>
+                <span class="skill__chip">Python/Django</span>
+                <span class="skill__chip">Rest</span>
+                <span class="skill__chip">Graphql</span>
+            </div>
+        </div>
+
+
+        <div class="skill">
+            <svg class="skill__icon">
+                <use xlink:href="/imgs/iconmoon/symbol-defs.svg#icon-tablet"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--dark">Android and IOS development</h4>
+            <p class="skill__paragraph">
+                I develop mordern android and IOS applications using the following technologies:
+            </p>
+            <div class="skill__chips">
+                <span class="skill__chip">Flutter</span>
+                <span class="skill__chip">Java</span>
+                <span class="skill__chip">Dart</span>
+
+            </div>
+        </div>
+
+        <div class="skill">
+            <svg class="skill__icon">
+                <use xlink:href="/imgs/iconmoon/symbol-defs.svg#icon-stats-dots"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--dark">Data analysis</h4>
+            <p class="skill__paragraph">
+                I have great skills in visualizing, analysing and presenting data using the following tools
+            </p>
+            <div class="skill__chips">
+                <span class="skill__chip">Pandas</span>
+                <span class="skill__chip">Matplotlib</span>
+                <span class="skill__chip">numpy</span>
+                <span class="skill__chip">seaborn</span>
+
+            </div>
+        </div>
+
+        <div class="skill">
+            <svg class="skill__icon">
+                <use xlink:href="/imgs/iconmoon/symbol-defs.svg#icon-retweet"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--dark">Machine and Deep learning</h4>
+            <p class="skill__paragraph">
+                I am currently learning how to develop and deploy machine and deep learning models
+                using the following technologies.
+            </p>
+            <div class="skill__chips">
+                <span class="skill__chip">Tensorflow</span>
+                <span class="skill__chip">scilearn</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="project">
+
+            <figure class="project__picture">
+                <img src="/imgs/banking.png" alt="project-image" class="project__image">
+                <h4 class="project__caption heading-4 heading-4--light">Mobile banking App</h4>
+            </figure>
+
+            <div class="project__cta">
+                <h4 class="heading-4 heading-4--light project__cta-heading">Food delivery system</h4>
+                <p class="project__cta-paragraph">
+                    A simple mobile banking app offering banking services for the unbanked
+                </p>
+                <a href="#" class="btn project__cta-btn">Download APK</a>
+            </div>
+
+        </div>
+
+        <div class="project">
+
+            <figure class="project__picture">
+                <img src="/imgs/books.png" alt="project-image" class="project__image">
+                <h4 class="project__caption heading-4 heading-4--light">Books Search Engine</h4>
+            </figure>
+
+            <div class="project__cta">
+                <h4 class="heading-4 heading-4--light project__cta-heading">Book search engine</h4>
+                <p class="project__cta-paragraph">
+                    An amazon book search app tha helps users find thier disered books easily from amazon
+                </p>
+                <a href="https://bookshome.netlify.app/" class="btn project__cta-btn">Launch App</a>
+            </div>
+
+        </div>
+
+        <div class="project">
+
+            <figure class="project__picture">
+                <img src="/imgs/whiteboard.png" alt="project-image" class="project__image">
+                <h4 class="project__caption heading-4 heading-4--light">Collaborative Whiteboard</h4>
+            </figure>
+
+            <div class="project__cta">
+                <h4 class="heading-4 heading-4--light project__cta-heading">Online Collaborative Whiteboard</h4>
+                <p class="project__cta-paragraph">
+                    It is a realtime whiteboards that allows users to draw objects and text on the go.
+                </p>
+                <a href="#" class="btn project__cta-btn">Launch App</a>
+            </div>
+
+        </div>
+
+        <div class="project">
+
+            <figure class="project__picture">
+                <img src="/imgs/mkulima.png" alt="project-image" class="project__image">
+                <h4 class="project__caption heading-4 heading-4--light">Digital Farm</h4>
+            </figure>
+
+            <div class="project__cta">
+                <h4 class="heading-4 heading-4--light project__cta-heading">Digital Farm</h4>
+                <p class="project__cta-paragraph">
+                    Farmers best platform for farm record keeping and market tracking
+                </p>
+                <a href="#" class="btn project__cta-btn">Launch Dijifarm</a>
+            </div>
+
+        </div>
+
+
+        <div class="project">
+
+            <figure class="project__picture">
+                <img src="/imgs/omnifood.png" alt="project-image" class="project__image">
+                <h4 class="project__caption heading-4 heading-4--light">Food delivery system</h4>
+            </figure>
+
+            <div class="project__cta">
+                <h4 class="heading-4 heading-4--light project__cta-heading">Food delivery system</h4>
+                <p class="project__cta-paragraph">
+                    A food delivery system with an aim of delivering heathy meals to the society
+                </p>
+                <a href="https://demofooddelivery.netlify.app/" class="btn project__cta-btn">Launch Demo</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="testimonials" id="testmonials">
+        <h2 class="heading-2 heading-2--light testimonials__heading">Happy Team Members</h2>
+        <div class="customers">
+            <div class="customers__testmony">
+                <p class="customers__text">
+                    Caxton has a keen eye for design, is a pro of Javscript & several other programming languages, and
+                    has
+                    a creative/artistic way about him that enables him to use all of his skills in synergy to bring a
+                    project full circle and at the right price. I can’t say enough about Caxton. If my own
+                    mother asked me tomorrow who she should hire for a web project… Caxton is the guy, without
+                    hesitation.
+                </p>
+                <div class="customers__details">
+                    <img src="/imgs/emmanuel.jpeg" alt="" class="customers__photo">
+                    <div class="customers__personal">
+                        <p class="customers__personal-name">Emmanuel M.</p>
+                        <p class="customers__personal-occupation">Frontend Engineer</p>
+                        <div class="customers__personal-social">
+                            <a href="https://chriss-eta.vercel.app" class="btn__social"><i class="fa fa-chrome"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/emnet254" class="btn__social"><i class="fa fa-twitter"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/mwangi-maina-6463281ab/" class="btn__social"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="customers__testmony">
+                <p class="customers__text">
+                    Having worked with Muthoni Caxton for a few months, I am very impressed with his seemingly endless
+                    knowledge of the IT sector, and especially how quickly he completes every project within the set
+                    timeframe. Lines of communication are excellent, and he always does exactly what he says he will.
+                </p>
+                <div class="customers__details">
+                    <img src="/imgs/ngenov.jpeg" alt="" class="customers__photo">
+                    <div class="customers__personal">
+                        <p class="customers__personal-name">Ngeno Victor.</p>
+                        <p class="customers__personal-occupation">Full-Stack Software Engineer</p>
+                        <div class="customers__personal-social">
+                            <a href="https://www.engenovic.co.ke/" class="btn__social"><i class="fa fa-chrome"
+                                    aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/engngeno.victor" class="btn__social"><i
+                                    class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#https://www.linkedin.com/in/ngenovic/" class="btn__social"><i
+                                    class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="customers__testmony"> -->
+            <!-- <p class="customers__text">
+                    Praesentium maiores soluta ratione eaque
+                    minus omnis obcaecati doloribus, asperiores explicabo dignissimos illum numquam quidem repellendus
+                    sit id.
+                </p>
+                <div class="customers__details">
+                    <img src="/imgs/etty.jpg" alt="" class="customers__photo">
+                    <div class="customers__personal">
+                        <p class="customers__personal-name">Emmanuel M.</p>
+                        <p class="customers__personal-occupation">Frontend Engineer</p>
+                        <div class="customers__personal-social">
+                            <a href="#" class="btn__social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#" class="btn__social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" class="btn__social"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+            <!-- </div> -->
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="contact__bg"></div>
+
+        <div class="contact__form">
+            <div class="contact__pad"></div>
+            <div class="contact__card">
+                <form action="https://getform.io/f/c69adf4f-a230-4661-9da6-a2ac18ab542a" method="post"
+                    class="contact_us-form">
+                    <h3 class="heading-3 mb-sm">Get in touch with Caxton</h3>
+                    <div class="contact_us-form-input-group">
+                        <input type="text" autocomplete="off" required
+                            class="contact_us-form-input contact_us-form-input--1" name="name" id="name"
+                            placeholder="Fullname">
+                        <label class="contact_us-form-label" for="name">Fullname</label>
+                    </div>
+
+                    <div class="contact_us-form-input-group">
+                        <input type="text" autocomplete="off" required name="email"
+                            class="contact_us-form-input contact_us-form-input--2" id="subject"
+                            placeholder="Email Address">
+                        <label class="contact_us-form-label" for="subject">Email Address</label>
+                    </div>
+
+                    <div class="contact_us-form-input-group">
+                        <textarea class="contact_us-form-input" required name="message" id="message"
+                            placeholder="Your Message" cols="30" rows="5" class="contact_us-form-message"></textarea>
+                        <label class="contact_us-form-label" for="message">Your Message</label>
+                    </div>
+
+                    <button type="submit" class="btn-secondary btn-send-message">Send Message <i
+                            class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                </form>
+
+                <div class="side-info side-info--2">
+                    <h3 class="heading-3">Find me on social media</h3>
+                    <img class="side-info__image" src="/imgs/caxton.png" alt="Caxton">
+                    <p class="side-info__name">Muthoni G. Caxton</p>
+                    <div class="side-info__icons">
+                        <a href="https://www.facebook.com/caxton.mathitu/" target="_blank"
+                            class="side-info__social side-info__social--1">
+                            <i class="fa fa-facebook side-info__social--icon" aria-hidden="true"></i>
+                            <span class="side-info__social--name">Facebook</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/caxton-muthoni-7b2444175/" target="_blank"
+                            class="side-info__social">
+                            <i class="fa fa-linkedin side-info__social--icon" aria-hidden="true"></i>
+                            <span class="side-info__social--name">LinkedIn</span>
+                        </a>
+
+                        <a href="https://api.whatsapp.com/send?phone=+254743751575" target="_blank"
+                            class="side-info__social">
+                            <i class="fa fa-whatsapp side-info__social--icon" aria-hidden="true"></i>
+                            <span class="side-info__social--name">Whatsapp</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <svg class="footer__logo">
+            <use xlink:href="/imgs/logo/sprite.svg#logo"></use>
+        </svg>
+        <ul class="nav mb-hg">
+            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+
+            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+
+            <li class="nav__item"><a href="#testmonials" class="nav__link">Testmonials</a></li>
+
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <p class="footer__text">
+            I’m an innovative software engineer with 7+ years of experience managing all aspects of the development
+            process for small to medium-sized companies
+        </p>
+        <p class="footer__legal">
+            &copy; copyright 2021. Designed and developed with <i class="fa fa-heart " aria-hidden="true"></i> by <a
+                href="#" class="footer__legal-link">Muthoni G. Caxton</a>
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="/js/vendor/jquery.waypoints.min.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

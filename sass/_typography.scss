@@ -1,0 +1,125 @@
+%heading {
+    font-family: $heading-font-family;
+    font-weight: 400;
+}
+.heading-1 {
+    @extend %heading;
+    font-size: 4.5rem;
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: 4rem;
+    font-style: italic;
+    
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+}
+
+.heading-3 {
+    @extend %heading;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    color: $color-primary
+    
+
+}
+
+.heading-4 {
+    @extend %heading;
+    font-size: 1.9rem;
+
+    &--light {
+        color: $color-grey-light-1;
+    }
+
+    &--dark {
+        color: $color-grey-dark-1;
+    }
+}
+
+//utiltites
+
+.mb-sm {margin-bottom: 2rem;}
+.mb-md {margin-bottom: 3rem;}
+.mb-lg {margin-bottom: 4rem;}
+.mb-hg {margin-bottom: 8rem;}
+
+
+.btn {
+    background-color: $color-primary;
+    color: $color-grey-light-1;
+    border: none;
+    text-transform: uppercase;
+    font-family: $heading-font-family;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    transition: all .2s;
+    text-decoration: none;
+    border-radius: .5rem;
+    text-align: center;
+
+    &:hover {
+        background-color: $color-primary-dark;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-secondary {
+    background-color: $color-secondary;
+    color: $color-grey-light-1;
+    border: none;
+    text-transform: uppercase;
+    font-family: $heading-font-family;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    transition: all .2s;
+    text-decoration: none;
+    text-align: center;
+    border-radius: .5rem;
+    display: block;
+
+    &:hover {
+       transform: scale(1.01);
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-outline {
+    border: 2px solid $color-primary;
+    color: $color-primary;
+    text-transform: uppercase;
+    font-family: $heading-font-family;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    transition: all .2s;
+    text-decoration: none;
+    border-radius: .5rem;
+
+    &:hover {
+        background-color: $color-primary-dark;
+        color: $color-grey-light-1;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}

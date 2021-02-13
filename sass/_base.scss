@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+    @media only screen and (max-width: 1200px){
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: 600px){
+        font-size: 43.75%;
+    }
+
+    @media only screen and (max-width: 400px){
+        font-size: 38.75%;
+    }
+}
+
+body {
+    font-family: $primary-font-family;
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+section:focus,
+header:focus {
+    outline: none;
+    border: none;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 8rem 80vh repeat(3, 100vh) 40vw 100vh;
+    grid-template-columns:
+        [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end]
+        minmax(6rem, 1fr) [full-end];
+
+        @media only screen and (max-width: 1200px){
+            grid-template-rows: 8rem 50vh repeat(3, min-content) 40vw 60vh;
+        }
+
+        @media only screen and (max-width: 900px){
+            grid-template-rows: 8rem 50vh 50vw repeat(3, max-content) 60vw 60vh;
+        }
+
+        @media only screen and (max-width: 600px){
+            grid-template-rows: 8rem 50vh 50vw repeat(3, max-content) 80vh 70vh;
+        }
+
+        @media only screen and (max-width: 400px){
+            grid-template-rows: 8rem 50vh 55vw repeat(3, max-content) 80vh 70vh;
+        }
+}
