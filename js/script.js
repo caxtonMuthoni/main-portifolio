@@ -16,7 +16,7 @@ $(document).ready(function () {
     },
     {
       offset: "60px",
-    }
+    },
   );
 
   //    Side menu
@@ -72,14 +72,14 @@ $(document).ready(function () {
                 $target.attr("tabindex", "-1"); // Adding tabindex for elements not focusable
                 $target.focus(); // Set focus again
               }
-            }
+            },
           );
         }
       }
     });
 
   // Calaculating years of experience
-  var startYear = 2017;
+  var startYear = 2021;
   var currentYear = new Date().getFullYear();
   var yearsOfExperience = currentYear - startYear;
   $(".years_of_experience").text(yearsOfExperience + "+");

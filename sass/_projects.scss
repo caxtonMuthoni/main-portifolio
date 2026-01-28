@@ -1,169 +1,170 @@
 .projects {
-    grid-column: full-start / full-end;
-    background-color: $color-grey-light-1;
-    padding: 15rem 5rem;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 4rem;
+  grid-column: full-start / full-end;
+  background-color: $color-grey-light-1;
+  padding: 15rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem;
 
-    @media only screen and (max-width: 1200px){
-        grid-template-columns: repeat(3, 1fr);
-    }
+  @media only screen and (max-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-    @media only screen and (max-width: 900px){
-        grid-template-columns: repeat(2, 1fr);
-        padding: 10rem 5rem;
-    }
+  @media only screen and (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10rem 5rem;
+  }
 
-    @media only screen and (max-width: 600px){
-        grid-template-columns: 1fr;
-    }
-
-    
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .project {
-    perspective: 150rem;
-    box-shadow: 0 1.5rem 4rem rgba(#000, 0.2);
-    position: relative;
-    height: 17rem;
+  perspective: 150rem;
+  box-shadow: 0 1.5rem 4rem rgba(#000, 0.2);
+  position: relative;
+  height: 25rem;
 
-    @media only screen and (max-width: 1200px){
-        height: 25rem;
+  @media only screen and (max-width: 1200px) {
+    height: 25rem;
+  }
+
+  @media only screen and (max-width: 900px) {
+    height: 40rem;
+  }
+
+  @media only screen and (max-width: 600px) {
+    height: 45rem;
+  }
+
+  &__cta,
+  &__picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    transition: all 1s;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &:hover &__picture {
+    transform: rotateY(-180deg);
+  }
+
+  &__picture {
+  }
+
+  &:hover &__cta {
+    transform: rotateY(0deg);
+  }
+
+  &__cta {
+    transform: rotateY(180deg);
+    background-image:
+      linear-gradient(
+        rgba($color-secondary, 0.98),
+        rgba($color-secondary, 0.9)
+      ),
+      url("../imgs/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-paragraph {
+      color: $color-grey-light-1;
+      padding: 1.3rem;
+      font-size: 1.6rem;
     }
 
-    @media only screen and (max-width: 900px){
-        height: 40rem;
+    &-btn {
+      width: 60%;
+      align-self: center;
+      margin-bottom: 0.5rem;
     }
+  }
 
-    @media only screen and (max-width: 600px){
-        height: 45rem;
-    }
+  &__image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
 
+  &__caption {
+    padding: 1rem 2rem;
+    background-color: $color-secondary;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    text-transform: capitalize;
+    transform: translateY(-1.8rem);
+  }
+}
+
+// Media query
+@media only screen and (max-width: 900px) {
+  .project {
     &__cta,
     &__picture {
-        display: block;
-        width: 100%;
-        height: 100%;
-        border-radius: 0.5rem;
-        transition: all 1s;
-        backface-visibility: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
+      backface-visibility: visible;
+      position: relative;
+      width: 100%;
+      height: 50%;
+      border-radius: 0;
     }
 
     &:hover &__picture {
-        transform: rotateY(-180deg);
+      transform: rotateY(0);
     }
 
     &__picture {
     }
 
     &:hover &__cta {
-        transform: rotateY(0deg);
+      transform: rotateY(0deg);
     }
 
     &__cta {
-        transform: rotateY(180deg);
-        background-image: linear-gradient(rgba($color-secondary, 0.98), rgba($color-secondary, 0.9)),
-            url("../imgs/hero.jpg");
-        background-position: center;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+      transform: rotateY(0);
 
-        &-paragraph {
-            color: $color-grey-light-1;
-            padding: 1.3rem;
-            font-size: 1.6rem;
-        }
+      &-paragraph {
+        color: $color-grey-light-1;
+        padding: 1.3rem;
+        font-size: 1.8rem;
+      }
 
-        &-btn {
-            width: 60%;
-            align-self: center;
-            margin-bottom: .5rem;
-        }
+      &-btn {
+        width: 60%;
+        align-self: center;
+        margin-bottom: 0.5rem;
+      }
     }
 
     &__image {
-        width: 100%;
-        height: 100%;
-        display: block;
-        object-fit: cover;
-        border-radius: 0.5rem;
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 0.5rem;
     }
 
     &__caption {
-        padding: 1rem 2rem;
-        background-color: $color-secondary;
-        text-align: center;
-        width: 70%;
-        margin: 0 auto;
-        text-transform: capitalize;
-        transform: translateY(-1.8rem);
+      display: none;
+      padding: 1rem 2rem;
+      background-color: $color-secondary;
+      text-align: center;
+      width: 70%;
+      margin: 0 auto;
+      text-transform: capitalize;
+      transform: translateY(-1.8rem);
     }
-}
-
-// Media query
-@media only screen and (max-width: 900px){
-    .project {
-    
-        &__cta,
-        &__picture {
-            backface-visibility: visible;
-            position: relative;
-            width: 100%;
-            height: 50%;
-            border-radius: 0;
-        }
-    
-        &:hover &__picture {
-            transform: rotateY(0);
-        }
-    
-        &__picture {
-        }
-    
-        &:hover &__cta {
-            transform: rotateY(0deg);
-        }
-    
-        &__cta {
-            transform: rotateY(0);
-
-            &-paragraph {
-                color: $color-grey-light-1;
-                padding: 1.3rem;
-                font-size: 1.8rem;
-            }
-    
-            &-btn {
-                width: 60%;
-                align-self: center;
-                margin-bottom: .5rem;
-            }
-        }
-    
-        &__image {
-            width: 100%;
-            height: 100%;
-            display: block;
-            object-fit: cover;
-            border-radius: 0.5rem;
-        }
-    
-        &__caption {
-            display: none;
-            padding: 1rem 2rem;
-            background-color: $color-secondary;
-            text-align: center;
-            width: 70%;
-            margin: 0 auto;
-            text-transform: capitalize;
-            transform: translateY(-1.8rem);
-        }
-    }
+  }
 }
